@@ -9,6 +9,11 @@ const STRINGS = {
   PREV_BUTTON_TEXT: "Previous",
   NEXT_BUTTON_TEXT: "Next",
   ROLE_BUTTON: "button",
+  LAZY_LOADING: "lazy",
+  DATE: "Date:",
+  LOCATION: "Location",
+  PRICE: "Price: $",
+  ERROR_MESSAGE: "Failed to load data! Sorry for inconvenience",
 };
 
 export default STRINGS;

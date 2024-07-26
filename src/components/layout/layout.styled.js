@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { flexContainer } from "../../utils/styles";
+import { flexContainer } from "../../utils";
 
 export const StyledLayout = styled.main`
   height: 100vh;
