@@ -1,8 +1,9 @@
 const theme = {
   colors: {
     primary: "#0D0D3A",
-    secondary: "#e0d9cf",
+    secondary: "#E0D9CF",
     white: "#FFF",
+    error: "#ED4337",
   },
   fonts: {
     body: "Arial, sans-serif",
@@ -44,7 +45,7 @@ const theme = {
     sm: "8px",
     md: "16px",
     lg: "24px",
-    xl: "32px",
+    xl: "34px",
     xxl: "48px",
     xxxl: "64px",
   },

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { flexContainer } from "../../utils/styles";
+import { flexContainer } from "../../utils";
 import Select from "react-select";
 
 export const StyledHomeContainer = styled.main`
@@ -21,7 +21,7 @@ export const StyledHomeContainer = styled.main`
 export const StyledSecondaryCardsContainer = styled.div`
   ${flexContainer({
     justifyContent: "flex-start",
-    alignItems: "flex-start",
+    alignItems: "unset",
   })};
   gap: ${({ theme }) => theme.spacing.md};
 
@@ -30,6 +30,12 @@ export const StyledSecondaryCardsContainer = styled.div`
       theme.widths.mWebMax}) {
     flex-direction: column;
   }
+`;
+
+export const StyledError = styled.div`
+  ${flexContainer};
+  font-size: ${({ theme }) => theme.fontSizes.large};
+  color: ${({ theme }) => theme.colors.error};
 `;
 
 export const StyledFilterAndSearchContainer = styled.div`

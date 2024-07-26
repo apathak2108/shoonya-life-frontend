@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { flexContainer } from "../../utils/styles";
+import { flexContainer } from "../../utils";
+import { PRIMARY_IMAGE_URL } from "../../constants/constants";
 
 export const StyledPrimaryCardContainer = styled.section`
   height: ${({ theme }) => theme.breakpoints.sm};
@@ -21,10 +22,14 @@ export const StyledPrimaryCardContainer = styled.section`
   }
 `;
 
-export const StyledPrimaryCardImage = styled.img`
+export const StyledPrimaryImageContainer = styled.div`
   height: ${({ theme }) => theme.heights.medium};
   width: ${({ theme }) => theme.widths.full};
   border-radius: ${({ theme }) => theme.borderRadius.sm};
+  background-image: url(${PRIMARY_IMAGE_URL});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const StyledPrimaryCardTextContainer = styled.article`

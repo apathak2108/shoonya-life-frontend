@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { flexContainer } from "../utils/styles";
+import { flexContainer } from "../../utils";
 
 export const StyledSecondryCardContainer = styled.section`
   width: -webkit-fill-available;
@@ -8,6 +8,7 @@ export const StyledSecondryCardContainer = styled.section`
     alignItems: "flex-start",
     flexDirection: "column",
   })};
+  cursor: pointer;
   background: ${({ theme }) => theme.colors.secondary};
   border-radius: ${({ theme }) => theme.borderRadius.sm};
   padding: ${({ theme }) => theme.spacing.md};

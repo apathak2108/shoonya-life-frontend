@@ -2,17 +2,16 @@ import React from "react";
 import {
   StyledPrimaryCardContainer,
   StyledPrimaryCardHeading,
-  StyledPrimaryCardImage,
   StyledPrimaryCardText,
   StyledPrimaryCardTextContainer,
+  StyledPrimaryImageContainer,
 } from "./primaryCard.styled";
-import HomePrimaryImg from "../../assets/HomePrimaryImg.jpg";
 import STRINGS from "../../constants/strings";
 
 const PrimaryCard = () => {
   return (
     <StyledPrimaryCardContainer>
-      <StyledPrimaryCardImage src={HomePrimaryImg} />
+      <StyledPrimaryImageContainer />
       <StyledPrimaryCardTextContainer>
         <StyledPrimaryCardHeading>
           {STRINGS.PRIMARY_CARD_HEADING}
