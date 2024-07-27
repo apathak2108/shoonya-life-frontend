@@ -1,5 +1,5 @@
-**Production Live Demo**: https://shoonya-life-frontend-assignment-q8o56rn8x.vercel.app/
-**Mobile View Video**: https://drive.google.com/file/d/16hx7nTMGloZOe9shW0I4RAlAj8LABGvu/view?usp=drive_link
+**Production Live Demo**: https://shoonya-life-frontend-assignment-q8o56rn8x.vercel.app<br>
+**Mobile View Video**: https://drive.google.com/file/d/16hx7nTMGloZOe9shW0I4RAlAj8LABGvu/view?usp=drive_link<br>
 **Web View Video**: https://drive.google.com/file/d/1xYm5ct7UGD2xF5QX3KjSXNVgRfuaEhs-/view?usp=drive_link
 
 ## To run the project on your machine, follow the given steps:-
