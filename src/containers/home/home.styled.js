@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { flexContainer } from "../../utils";
-import Select from "react-select";
 
 export const StyledHomeContainer = styled.main`
   padding: ${({ theme }) => theme.spacing.xxl};
@@ -32,6 +31,10 @@ export const StyledSecondaryCardsContainer = styled.div`
   }
 `;
 
+export const StyledSkeletonContainer = styled(StyledSecondaryCardsContainer)`
+  justify-content: space-between;
+`;
+
 export const StyledError = styled.div`
   ${flexContainer};
   font-size: ${({ theme }) => theme.fontSizes.large};
@@ -61,11 +64,12 @@ export const StyledFilterContainer = styled.div`
       theme.widths.mWebMin}) and (max-width: ${({ theme }) =>
       theme.widths.mWebMax}) {
     flex-direction: column;
+    width: ${({ theme }) => theme.widths.full};
   }
 `;
 
-export const StyledSearchContainer = styled.input`
-  width: ${({ theme }) => theme.widths.half};
+export const StyledSearchInput = styled.input`
+  width: ${({ theme }) => theme.widths.thirtyThree};
   height: ${({ theme }) => theme.spacing.xl};
   text-indent: ${({ theme }) => theme.spacing.sm};
   border-radius: ${({ theme }) => theme.borderRadius.sm};
@@ -75,9 +79,8 @@ export const StyledSearchContainer = styled.input`
   letter-spacing: ${({ theme }) => theme.spacing.xxxs};
   border: none;
   &::placeholder {
-    letter-spacing: ${({ theme }) => theme.spacing.xxs};
     color: ${({ theme }) => theme.colors.white};
-    font-size: ${({ theme }) => theme.fontSizes.small};
+    font-size: ${({ theme }) => theme.fontSizes.medium};
   }
 
   @media (min-width: ${({ theme }) =>
@@ -85,31 +88,6 @@ export const StyledSearchContainer = styled.input`
       theme.widths.mWebMax}) {
     width: ${({ theme }) => theme.widths.full};
     padding: 0;
-  }
-`;
-
-export const StyledSelect = styled(Select)`
-  .css-13cymwt-control,
-  .css-t3ipsp-control {
-    background: #0d0d3a;
-    width: 160px;
-    @media (max-width: 767px) {
-      width: 320px;
-    }
-  }
-
-  .css-1cfo1cf {
-    color: white;
-  }
-  // .css-1nmdiq5-menu {
-  //   @media (max-width: 767px) {
-  //     width: 320px;
-  //   }
-  // }
-  .css-1jqq78o-placeholder,
-  .css-tj5bde-Svg,
-  .css-1dimb5e-singleValue {
-    color: white;
   }
 `;
 

@@ -1,6 +1,6 @@
 const theme = {
   colors: {
-    primary: "#0D0D3A",
+    primary: "#1B3252;",
     secondary: "#E0D9CF",
     white: "#FFF",
     error: "#ED4337",
@@ -27,6 +27,7 @@ const theme = {
   widths: {
     full: "100%",
     half: "50%",
+    thirtyThree: "33%",
     mWebMin: "360px",
     mWebMax: "768px",
   },

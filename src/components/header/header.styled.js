@@ -10,7 +10,9 @@ export const StyledHeader = styled.header`
   top: 0;
   z-index: 1;
 
-  @media (min-width: 360px) and (max-width: 768px) {
+    @media (min-width: ${({ theme }) =>
+      theme.widths.mWebMin}) and (max-width: ${({ theme }) =>
+      theme.widths.mWebMax}) {
     justify-content: center;
   }
 `;
@@ -24,7 +26,9 @@ export const StyledHeaderTitle = styled.span`
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   letter-spacing: ${({ theme }) => theme.spacing.xxxs};
 
-  @media (min-width: 360px) and (max-width: 768px) {
+    @media (min-width: ${({ theme }) =>
+      theme.widths.mWebMin}) and (max-width: ${({ theme }) =>
+      theme.widths.mWebMax}) {
     margin-left: 0;
   }
 `;
