@@ -1,6 +1,8 @@
-## To run the project in your machine, follow the given steps:-
+**Production Live Demo**: https://shoonya-life-frontend-assignment-q8o56rn8x.vercel.app/
 
-1. **Install Git**: Ensure that Git is installed on your machine. If not, do it by following link:
+## To run the project on your machine, follow the given steps:-
+
+1. **Install Git**: Ensure that Git is installed on your machine. If not, do it by the following link:
    https://git-scm.com/downloads
 
 2. **Open a Terminal or Command Prompt**: Access your terminal (macOS/Linux) or command prompt (Windows). You can also use Git Bash if you’re on Windows.
