@@ -31,6 +31,10 @@ export const StyledSecondaryCardsContainer = styled.div`
   }
 `;
 
+export const StyledSkeletonContainer = styled(StyledSecondaryCardsContainer)`
+  justify-content: space-between;
+`;
+
 export const StyledError = styled.div`
   ${flexContainer};
   font-size: ${({ theme }) => theme.fontSizes.large};

@@ -27,7 +27,7 @@ export const formatDateParts = (timestamp) => {
 
 // Extracting unique dates for filter by location
 export const extractUniqueLocationOptions = (data) => {
-  const locations = data.map((event) => event.location);
+  const locations = data?.map((event) => event.location);
   const uniqueLocations = [...new Set(locations)];
   uniqueLocations.sort();
   const locationOptions = uniqueLocations.map((location) => ({
@@ -68,7 +68,7 @@ const getResponsiveWidth = () => {
   if (window.matchMedia("(min-width: 360px) and (max-width: 768px)").matches) {
     return "100%";
   }
-  return "180px";
+  return "190px";
 };
 
 export const customStyles = {

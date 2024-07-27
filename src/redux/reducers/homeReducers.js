@@ -1,5 +1,6 @@
 import {
   GET_ALL_SECONDARY_CARDS_DATA_FAILURE,
+  GET_ALL_SECONDARY_CARDS_DATA_REQUEST,
   GET_ALL_SECONDARY_CARDS_DATA_SUCCESS,
   GET_SECONDARY_CARDS_DATA_FAILURE,
   GET_SECONDARY_CARDS_DATA_REQUEST,
@@ -25,6 +26,7 @@ export const homeReducer = (state = initialState, action) => {
         ...state,
         responseData: action.payload,
         loading: false,
+        error: "",
       };
     case GET_SECONDARY_CARDS_DATA_FAILURE:
       return {
@@ -32,15 +34,23 @@ export const homeReducer = (state = initialState, action) => {
         error: action.error,
         loading: false,
       };
+    case GET_ALL_SECONDARY_CARDS_DATA_REQUEST:
+      return {
+        ...state,
+        loading: true,
+      };
     case GET_ALL_SECONDARY_CARDS_DATA_SUCCESS:
       return {
         ...state,
         responseAllData: action.payload,
+        loading: false,
+        error: "",
       };
     case GET_ALL_SECONDARY_CARDS_DATA_FAILURE:
       return {
         ...state,
         error: action.error,
+        loading: false,
       };
     default:
       return state;

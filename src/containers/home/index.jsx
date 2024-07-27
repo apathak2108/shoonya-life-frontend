@@ -8,6 +8,7 @@ import {
   StyledHomeContainer,
   StyledSearchInput,
   StyledSecondaryCardsContainer,
+  StyledSkeletonContainer,
 } from "./home.styled";
 import MainCard from "../../components/primaryCard";
 import SecondaryCard from "../../components/secondaryCard";
@@ -37,7 +38,6 @@ const HomeContainer = () => {
   const allData = useSelector((state) => state?.home?.responseAllData);
   const loading = useSelector((state) => state?.home?.loading);
   const error = useSelector((state) => state?.home?.error);
-
   const filterByTypeOptions = extractUniqueTypeOptions(allData);
   const filterByLocationOptions = extractUniqueLocationOptions(allData);
   const lastPageNumber = calculateLastPageNumber(allData);
@@ -70,6 +70,8 @@ const HomeContainer = () => {
 
   const handleSearchQuery = (event) => {
     const { value } = event.target;
+    setLocation("");
+    setType("");
     setSearch(value);
   };
 
@@ -96,13 +98,11 @@ const HomeContainer = () => {
       </StyledFilterAndSearchContainer>
       {error && <StyledError>{STRINGS.ERROR_MESSAGE}</StyledError>}
       {loading && !error && (
-        <StyledSecondaryCardsContainer
-          style={{ justifyContent: "space-between" }}
-        >
+        <StyledSkeletonContainer>
           {[1, 2, 3].map((_, index) => (
             <Skeleton key={index} height="300px" width="320px" />
           ))}
-        </StyledSecondaryCardsContainer>
+        </StyledSkeletonContainer>
       )}
       {!loading && !error && (
         <StyledSecondaryCardsContainer>
